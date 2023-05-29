@@ -9990,7 +9990,7 @@ static void Cmd_trysetcaughtmondexflags(void)
     }
     else if (!FlagGet(FLAG_SYS_POKEDEX_GET)) 
     {
-        HandleSetPokedexFlag(SpeciesToNationalPokedexNum(Species), FLAG_SET_CAUGHT, personality);
+        HandleSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_SET_CAUGHT, personality);
         gBattlescriptCurrInstr = T1_READ_PTR(gBattlescriptCurrInstr + 1);
     }
     else
